@@ -5,11 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>West Midlands Police – Colour Palette</title>
+<meta name="color-scheme" content="light dark">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap');
 
 /* ── Design tokens ── */
 :root {
+color-scheme: light dark;
 –wmp-yellow: #fbba07;
 –wmp-blue:   #004996;
 
@@ -141,9 +143,9 @@ display: inline-block;
 background: var(–surface);
 border-radius: 10px;
 overflow: hidden;
-box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+box-shadow: none;
 margin-bottom: 1.1rem;
-border: 1px solid var(–border);
+border: 1.5px solid var(–border);
 }
 
 /* ── Collapsible header ── */
