@@ -329,13 +329,17 @@ color: var(–hex-copied-text);
 }
 
 /* ── Tint bar ── */
-.tone-bar-wrap { display: flex; align-items: center; gap: 0.5rem; }
+.tone-bar-wrap { display: flex; align-items: center; gap: 0.4rem; }
 .tone-bar {
 height: 8px; border-radius: 4px;
 width: 80px; flex-shrink: 0;
 border: 1px solid rgba(128,128,128,0.15);
 }
 .tone-pct { font-size: 0.73rem; color: var(–text-mid); white-space: nowrap; }
+
+@media (max-width: 680px) {
+.tone-bar { width: 32px; }
+}
 
 /* ── Primary row ── */
 .is-primary { background: var(–surface-alt); }
