@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colour System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>Colour System</h1>
+  <p class="subtitle">A clean, minimal palette with accessible tints and usage guidance</p>
+  <div class="controls">
+    <button id="toggle-dark">Dark Mode</button>
+    <div class="value-toggle">
+      <button data-mode="hex" class="active">HEX</button>
+      <button data-mode="rgb">RGB</button>
+      <button data-mode="hsl">HSL</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Example Colour Group -->
+  <section class="colour-group" id="primary-blue">
+    <h2>Primary Blue</h2>
+
+    <div class="swatch-grid">
+
+      <div class="swatch-card" data-hex="#005BBB" data-rgb="rgb(0, 91, 187)" data-hsl="hsl(210, 100%, 37%)">
+        <div class="swatch-colour" style="background:#005BBB;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Blue 500</div>
+          <div class="swatch-value">#005BBB</div>
+          <div class="contrast">AA</div>
+        </div>
+      </div>
+
+      <div class="swatch-card" data-hex="#4DA3FF" data-rgb="rgb(77, 163, 255)" data-hsl="hsl(210, 100%, 65%)">
+        <div class="swatch-colour" style="background:#4DA3FF;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Blue 300</div>
+          <div class="swatch-value">#4DA3FF</div>
+          <div class="contrast low">Low</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Add more colour groups here -->
+
+</main>
+
+<footer class="site-footer">
+  <p>Colour System · Updated 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
