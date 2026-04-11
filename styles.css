@@ -1,0 +1,144 @@
+/* Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  background: #eaeaea;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #dcdcdc;
+}
+
+.value-toggle button.active {
+  background: #111;
+  color: #fff;
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.colour-group {
+  margin: 3rem 0;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Swatch Cards */
+.swatch-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.swatch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+.swatch-colour {
+  height: 110px;
+}
+
+.swatch-info {
+  padding: 1rem;
+}
+
+.swatch-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.swatch-value {
+  font-family: ui-monospace, monospace;
+  opacity: 0.8;
+}
+
+.contrast {
+  margin-top: 0.6rem;
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  background: #d4f5d4;
+  color: #1a7a1a;
+}
+
+.contrast.low {
+  background: #ffe6c7;
+  color: #a65a00;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.6;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+body.dark .swatch-card {
+  background: #1c1c1c;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+body.dark button {
+  background: #333;
+  color: #eee;
+}
+
+body.dark .value-toggle button.active {
+  background: #eee;
+  color: #111;
+}
